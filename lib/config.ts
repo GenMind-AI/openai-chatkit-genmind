@@ -35,6 +35,17 @@ export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
     },
   },
   radius: "round",
+  density: 'spacious',
+  typography: {
+      baseSize: 16,
+      fontFamily: 'Inter, sans-serif',
+      fontSources: [
+        {
+          family: 'Inter',
+          src: 'https://rsms.me/inter/font-files/Inter-Regular.woff2',
+          weight: 400,
+          style: 'normal'
+        }
   // Add other theme options here
   // chatkit.studio/playground to explore config options
 });
