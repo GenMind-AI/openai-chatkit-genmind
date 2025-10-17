@@ -7,15 +7,20 @@ export const CREATE_SESSION_ENDPOINT = "/api/create-session";
 
 export const STARTER_PROMPTS: StartScreenPrompt[] = [
   {
-    label: "What can you do?",
-    prompt: "What can you do?",
+    label: "Θέλω να μάθω περισσότερα για τις υπηρεσίες σας!",
+    prompt: "Θέλω να μάθω περισσότερα για τις υπηρεσίες σας!",
+    icon: "circle-question",
+  },
+  {
+    label: "Θα ήθελα να κλείσω ένα ραντεβού για demo.",
+    prompt: "Θα ήθελα να κλείσω ένα ραντεβού για demo.",
     icon: "circle-question",
   },
 ];
 
-export const PLACEHOLDER_INPUT = "Ask anything...";
+export const PLACEHOLDER_INPUT = "Συνομιλία με ΑΙ...";
 
-export const GREETING = "How can I help you today?";
+export const GREETING = "Καλώς Ορίσατε! Πως μπορώ να βοηθήσω σήμερα;";
 
 export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
   color: {
