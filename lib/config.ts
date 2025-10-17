@@ -1,12 +1,11 @@
-// import { ColorScheme, StartScreenPrompt, ThemeOption } from "@openai/chatkit";
-import type { ChatKitOptions } from "@openai/chatkit";
+import { ColorScheme, StartScreenPrompt, ThemeOption } from "@openai/chatkit";
 
 export const WORKFLOW_ID =
   process.env.NEXT_PUBLIC_CHATKIT_WORKFLOW_ID?.trim() ?? "";
 
 export const CREATE_SESSION_ENDPOINT = "/api/create-session";
 
-// export const STARTER_PROMPTS: StartScreenPrompt[] = [
+export const STARTER_PROMPTS: StartScreenPrompt[] = [
   {
     label: "Ενημέρωση γιατις υπηρεσίες μας!",
     prompt: "Θέλω να μάθω περισσότερα για τις υπηρεσίες σας!",
@@ -19,59 +18,23 @@ export const CREATE_SESSION_ENDPOINT = "/api/create-session";
   },
 ];
 
-// export const PLACEHOLDER_INPUT = "Συνομιλία με ΑΙ...";
+export const PLACEHOLDER_INPUT = "Συνομιλία με ΑΙ...";
 
-// export const GREETING = "Καλώς Ορίσατε! Πως μπορώ να βοηθήσω σήμερα;";
+export const GREETING = "Καλώς Ορίσατε! Πως μπορώ να βοηθήσω σήμερα;";
 
-// export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
-//   color: {
-//     grayscale: {
-//       hue: 220,
-//       tint: 6,
-//       shade: theme === "dark" ? -1 : -4,
-//     },
-//     accent: {
-//       primary: theme === "dark" ? "#f1f5f9" : "#0f172a",
-//       level: 1,
-//     },
-//   },
-//   radius: "round",
-//   // Add other theme options here
-//   // chatkit.studio/playground to explore config options
-// });
-
-
-const options: ChatKitOptions = {
-  api: {
-    // TODO: configure your ChatKit API integration (URL, auth, uploads).
-  },
-  theme: {
-    colorScheme: 'light',
-    radius: 'pill',
-    density: 'normal',
-    typography: {
-      baseSize: 16,
-      fontFamily: 'Inter, sans-serif',
-      fontSources: [
-        {
-          family: 'Inter',
-          src: 'https://rsms.me/inter/font-files/Inter-Regular.woff2',
-          weight: 400,
-          style: 'normal'
-        }
-      // ...and 3 more font sources
-      ]
-    }
-  },
-  composer: {
-    placeholder: 'Συνομιλία με ΑΙ',
-    attachments: {
-      enabled: false
+export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
+  color: {
+    grayscale: {
+      hue: 220,
+      tint: 6,
+      shade: theme === "dark" ? -1 : -4,
+    },
+    accent: {
+      primary: theme === "dark" ? "#f1f5f9" : "#0f172a",
+      level: 1,
     },
   },
-  startScreen: {
-    greeting: 'Καλώς Ορίσατε! Πως μπορώ να βοηθήσω σήμερα;',
-    prompts: [],
-  },
-  // Optional fields not shown: locale, initialThread, threadItemActions, header, onClientTool, entities, widgets
-};
+  radius: "round",
+  // Add other theme options here
+  // chatkit.studio/playground to explore config options
+});
