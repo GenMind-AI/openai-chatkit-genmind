@@ -20,6 +20,11 @@ export const STARTER_PROMPTS: StartScreenPrompt[] = [
 
 export const PLACEHOLDER_INPUT = "Συνομιλία με ΑΙ...";
 
+const options: Partial<ChatKitOptions> = {
+  history: { enabled: false },
+  header: { enabled: false },
+};
+
 export const GREETING = "Καλώς Ορίσατε! Πως μπορώ να βοηθήσω σήμερα;";
 
 export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
