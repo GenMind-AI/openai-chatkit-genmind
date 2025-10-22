@@ -264,8 +264,38 @@ export function ChatKitPanel({
   const chatkit = useChatKit({
     api: { getClientSecret },
     theme: {
-      colorScheme: theme,
-      ...getThemeConfig(theme),
+      // colorScheme: theme,
+      // ...getThemeConfig(theme),
+      colorScheme: 'light',
+      radius: 'pill',
+      density: 'normal',
+      color: {
+        grayscale: {
+          hue: 0,
+          tint: 0
+        },
+        accent: {
+          primary: '#181818',
+          level: 2
+        },
+        surface: {
+          background: '#ffffff',
+          foreground: '#ffffff'
+        }
+      },
+      typography: {
+        baseSize: 16,
+        fontFamily: 'Inter, sans-serif',
+        fontSources: [
+          {
+            family: 'Inter',
+            src: 'https://rsms.me/inter/font-files/Inter-Regular.woff2',
+            weight: 400,
+            style: 'normal'
+          }
+        // ...and 3 more font sources
+        ]
+      },
     },
     startScreen: {
       greeting: GREETING,
@@ -279,16 +309,6 @@ export function ChatKitPanel({
         enabled: false,
       },
     },
-    typography: {
-      baseSize: 16,
-      fontFamily: 'Inter, sans-serif',
-      fontSources: [
-        {
-          family: 'Inter',
-          src: 'https://rsms.me/inter/font-files/Inter-Regular.woff2',
-          weight: 400,
-          style: 'normal'
-        },
     threadItemActions: {
       feedback: false,
     },
