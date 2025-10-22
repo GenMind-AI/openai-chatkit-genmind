@@ -28,6 +28,10 @@ export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
       hue: 220,
       tint: 6,
       shade: theme === "dark" ? -1 : -4,
+      surface: {
+        background: '#ffffff',
+        foreground: '#ffffff'
+      }
     },
     accent: {
       primary: theme === "dark" ? "#f1f5f9" : "#0f172a",
