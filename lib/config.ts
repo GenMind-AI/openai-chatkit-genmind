@@ -23,31 +23,17 @@ export const PLACEHOLDER_INPUT = "Συνομιλία με ΑΙ...";
 export const GREETING = "Καλώς Ορίσατε! Πως μπορώ να βοηθήσω σήμερα;";
 
 export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
-  // color: {
-  //   grayscale: {
-  //     hue: 220,
-  //     tint: 6,
-  //     shade: theme === "dark" ? -1 : -4,
-  //   },
-  //   accent: {
-  //     primary: theme === "dark" ? "#f1f5f9" : "#0f172a",
-  //     level: 1,
-  //   },
-  // },
   color: {
-      grayscale: {
-        hue: 0,
-        tint: 0
-      },
-      accent: {
-        primary: '#181818',
-        level: 2
-      },
-      surface: {
-        background: '#ffffff',
-        foreground: '#ffffff'
-      }
+    grayscale: {
+      hue: 220,
+      tint: 6,
+      shade: theme === "dark" ? -1 : -4,
     },
+    accent: {
+      primary: theme === "dark" ? "#f1f5f9" : "#0f172a",
+      level: 1,
+    },
+  },
   radius: "round",
   density: 'spacious',
   typography: {
