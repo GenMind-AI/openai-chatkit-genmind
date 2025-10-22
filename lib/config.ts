@@ -34,9 +34,6 @@ export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
       level: 1,
     },
   },
-  attachments: {
-      enabled: false
-    },
   radius: "round",
   density: 'spacious',
   typography: {
