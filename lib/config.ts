@@ -7,13 +7,23 @@ export const CREATE_SESSION_ENDPOINT = "/api/create-session";
 
 export const STARTER_PROMPTS: StartScreenPrompt[] = [
   {
-    label: "Ενημέρωση γιατις υπηρεσίες μας!",
+    label: "Ενημέρωση για τις υπηρεσίες μας!",
     prompt: "Θέλω να μάθω περισσότερα για τις υπηρεσίες σας!",
     icon: "circle-question",
   },
   {
-    label: "Προγραμματισμός ραντεβού για demo.",
-    prompt: "Θα ήθελα να κλείσω ένα ραντεβού για demo.",
+    label: "Προγραμματισμός ραντεβού για Education AI Tutors.",
+    prompt: "Θα ήθελα να κλείσω ένα ραντεβού για Education AI Tutors.",
+    icon: "circle-question",
+  },
+  {
+    label: "Προγραμματισμός ραντεβού για Business Workflow Automations.",
+    prompt: "Θα ήθελα να κλείσω ένα ραντεβού για Business Workflow Automations.",
+    icon: "circle-question",
+  },
+  {
+    label: "Προγραμματισμός ραντεβού για επίδειξη του League Pro.",
+    prompt: "Θα ήθελα να κλείσω ένα ραντεβού για επίδειξη του League Pro.",
     icon: "circle-question",
   },
 ];
