@@ -279,6 +279,16 @@ export function ChatKitPanel({
         enabled: false,
       },
     },
+    typography: {
+      baseSize: 16,
+      fontFamily: 'Inter, sans-serif',
+      fontSources: [
+        {
+          family: 'Inter',
+          src: 'https://rsms.me/inter/font-files/Inter-Regular.woff2',
+          weight: 400,
+          style: 'normal'
+        },
     threadItemActions: {
       feedback: false,
     },
