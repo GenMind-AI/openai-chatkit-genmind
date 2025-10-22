@@ -1,15 +1,5 @@
 import { ColorScheme, StartScreenPrompt, ThemeOption } from "@openai/chatkit";
 
-import { ChatKit } from "@openai/chatkit-js";
-// ...other imports
-
-const options = {
-  // ...other ChatKit options,
-  composer: {
-    attachments: false  // This disables the attachment (file/image upload) button
-  }
-};
-
 const chatkit = new ChatKit(options);
 
 export const WORKFLOW_ID =
