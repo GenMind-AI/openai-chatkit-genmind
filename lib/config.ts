@@ -1,21 +1,33 @@
 import { ColorScheme, StartScreenPrompt, ThemeOption } from "@openai/chatkit";
 
+import { ChatKit } from "@openai/chatkit-js";
+// ...other imports
+
+const options = {
+  // ...other ChatKit options,
+  composer: {
+    attachments: false  // This disables the attachment (file/image upload) button
+  }
+};
+
+const chatkit = new ChatKit(options);
+
 export const WORKFLOW_ID =
   process.env.NEXT_PUBLIC_CHATKIT_WORKFLOW_ID?.trim() ?? "";
 
 export const CREATE_SESSION_ENDPOINT = "/api/create-session";
 
 export const STARTER_PROMPTS: StartScreenPrompt[] = [
-  // {
-  //   label: "Ενημέρωση γιατις υπηρεσίες μας!",
-  //   prompt: "Θέλω να μάθω περισσότερα για τις υπηρεσίες σας!",
-  //   icon: "circle-question",
-  // },
-  // {
-  //   label: "Προγραμματισμός ραντεβού για demo.",
-  //   prompt: "Θα ήθελα να κλείσω ένα ραντεβού για demo.",
-  //   icon: "circle-question",
-  // },
+  {
+    label: "Ενημέρωση γιατις υπηρεσίες μας!",
+    prompt: "Θέλω να μάθω περισσότερα για τις υπηρεσίες σας!",
+    icon: "circle-question",
+  },
+  {
+    label: "Προγραμματισμός ραντεβού για demo.",
+    prompt: "Θα ήθελα να κλείσω ένα ραντεβού για demo.",
+    icon: "circle-question",
+  },
 ];
 
 export const PLACEHOLDER_INPUT = "Συνομιλία με ΑΙ...";
