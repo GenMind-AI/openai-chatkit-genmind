@@ -5,69 +5,38 @@ export const WORKFLOW_ID =
 
 export const CREATE_SESSION_ENDPOINT = "/api/create-session";
 
-// export const STARTER_PROMPTS: StartScreenPrompt[] = [
-//   {
-//     label: "Ενημέρωση γιατις υπηρεσίες μας!",
-//     prompt: "Θέλω να μάθω περισσότερα για τις υπηρεσίες σας!",
-//     icon: "circle-question",
-//   },
-//   {
-//     label: "Προγραμματισμός ραντεβού για demo.",
-//     prompt: "Θα ήθελα να κλείσω ένα ραντεβού για demo.",
-//     icon: "circle-question",
-//   },
-// ];
+export const STARTER_PROMPTS: StartScreenPrompt[] = [
+  {
+    label: "Ενημέρωση γιατις υπηρεσίες μας!",
+    prompt: "Θέλω να μάθω περισσότερα για τις υπηρεσίες σας!",
+    icon: "circle-question",
+  },
+  {
+    label: "Προγραμματισμός ραντεβού για demo.",
+    prompt: "Θα ήθελα να κλείσω ένα ραντεβού για demo.",
+    icon: "circle-question",
+  },
+];
 
 export const PLACEHOLDER_INPUT = "Συνομιλία με ΑΙ...";
 
 export const GREETING = "Καλώς Ορίσατε! Πως μπορώ να βοηθήσω σήμερα;";
 
-// export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
-//   color: {
-//     grayscale: {
-//       hue: 220,
-//       tint: 6,
-//       shade: theme === "dark" ? -1 : -4,
-//     },
-//     accent: {
-//       primary: theme === "dark" ? "#f1f5f9" : "#0f172a",
-//       level: 1,
-//     },
-//   },
-//   radius: "round",
-//   density: 'spacious',
-//   typography: {
-//       baseSize: 16,
-//       fontFamily: 'Inter, sans-serif',
-//       fontSources: [
-//         {
-//           family: 'Inter',
-//           src: 'https://rsms.me/inter/font-files/Inter-Regular.woff2',
-//           weight: 400,
-//           style: 'normal'
-//         }
-//   },
-//   // Add other theme options here
-//   // chatkit.studio/playground to explore config options
-// });
-
-import type { ChatKitOptions } from "@openai/chatkit";
-
-const options: ChatKitOptions = {
-  api: {
-    // TODO: configure your ChatKit API integration (URL, auth, uploads).
-  },
-  theme: {
-    colorScheme: 'light',
-    radius: 'pill',
-    density: 'normal',
-    color: {
-      surface: {
-        background: '#ffffff',
-        foreground: '#ffffff'
-      }
+export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
+  color: {
+    grayscale: {
+      hue: 220,
+      tint: 6,
+      shade: theme === "dark" ? -1 : -4,
     },
-    typography: {
+    accent: {
+      primary: theme === "dark" ? "#f1f5f9" : "#0f172a",
+      level: 1,
+    },
+  },
+  radius: "round",
+  density: 'spacious',
+  typography: {
       baseSize: 16,
       fontFamily: 'Inter, sans-serif',
       fontSources: [
@@ -77,19 +46,7 @@ const options: ChatKitOptions = {
           weight: 400,
           style: 'normal'
         }
-      // ...and 3 more font sources
-      ]
-    }
   },
-  composer: {
-    placeholder: 'Συνομιλία AI',
-    attachments: {
-      enabled: false
-    },
-  },
-  startScreen: {
-    greeting: 'Καλώς Ορίσατε! Πως μπορώ να βοηθήσω σήμερα;',
-    prompts: [],
-  },
-  // Optional fields not shown: locale, initialThread, threadItemActions, header, onClientTool, entities, widgets
-};
+  // Add other theme options here
+  // chatkit.studio/playground to explore config options
+});
