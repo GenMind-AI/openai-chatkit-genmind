@@ -22,8 +22,8 @@ export default function App() {
   }, []);
 
   return (
-    // removed class from main tag : bg-slate-100
-    <main className="flex min-h-screen flex-col items-center justify-end dark:bg-slate-950">
+    // removed class from main tag : bg-slate-100, dark:bg-slate-950
+    <main className="flex min-h-screen flex-col items-center justify-end bg-gradient-to-br from-blue-500 via-teal-400 to-teal-600">
     <div className="mx-auto w-full max-w-5xl">
         <ChatKitPanel
           theme={scheme}
