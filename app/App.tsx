@@ -23,7 +23,7 @@ export default function App() {
 
   return (
     // removed class from main tag : bg-slate-100, dark:bg-slate-950
-    // tried: (bg-gradient-to-br from-blue-500 via-teal-400 to-teal-600)
+    // tried:(bg-gradient-to-br from-blue-500 via-teal-400 to-teal-600)
     <main className="flex min-h-screen flex-col items-center justify-end dark:bg-slate-950">
     <div className="mx-auto w-full max-w-5xl">
         <ChatKitPanel
