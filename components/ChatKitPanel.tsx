@@ -306,7 +306,7 @@ export function ChatKitPanel({
     },
     disclaimer: {
       text: "Η συνομιλία πραγματοποιείται μέσω αυτοματοποιημένου chatbot και προορίζεται μόνο για γενική ενημέρωση. Παρακαλούμε μην κοινοποιείτε προσωπικά ή ευαίσθητα δεδομένα (όπως στοιχεία ταυτότητας, οικονομικά δεδομένα ή ιατρικές πληροφορίες).",
-      highContrast: true // optional, makes the disclaimer text more visible
+      highContrast: false // optional, makes the disclaimer text more visible
     },
     composer: {
       placeholder: PLACEHOLDER_INPUT,
