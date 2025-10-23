@@ -1,10 +1,10 @@
-import Script from "next/script";
+mimport Script from "next/script";
 import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AgentKit demo",
-  description: "Demo of ChatKit with hosted workflow",
+  title: "GenMind Agent Scheduler",
+  description: "Appointment scheduler Agent based on OpenAI Agent Workflow",
 };
 
 export default function RootLayout({
