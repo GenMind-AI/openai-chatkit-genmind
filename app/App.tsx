@@ -23,8 +23,8 @@ export default function App() {
 
   return (
     // removed class from main tag : bg-slate-100, dark:bg-slate-950
-    <main className="flex min-h-screen flex-col items-center justify-end bg-gradient-to-br from-blue-500 via-teal-400 to-teal-600">
-    <div className="mx-auto w-full max-w-5xl">
+    <main className="flex min-h-screen flex-col items-center justify-end">
+    <div className="mx-auto w-full max-w-5xl bg-gradient-to-br from-blue-500 via-teal-400 to-teal-600">
         <ChatKitPanel
           theme={scheme}
           onWidgetAction={handleWidgetAction}
