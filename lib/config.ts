@@ -9,17 +9,17 @@ export const STARTER_PROMPTS: StartScreenPrompt[] = [
   {
     label: "Ενημέρωση για Education AI Tutors.",
     prompt: "Θα ήθελα να κλείσω ένα ραντεβού για Education AI Tutors.",
-    icon: "circle-question",
+    icon: "book-open",
   },
   {
     label: "Ενημέρωση για Business Workflow Automations.",
     prompt: "Θα ήθελα να κλείσω ένα ραντεβού για Business Workflow Automations.",
-    icon: "circle-question",
+    icon: "lightbulb",
   },
   {
     label: "Επίδειξη του League Pro.",
     prompt: "Θα ήθελα να κλείσω ένα ραντεβού για επίδειξη του League Pro.",
-    icon: "circle-question",
+    icon: "analytics",
   },
 ];
 
